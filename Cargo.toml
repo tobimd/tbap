@@ -1,0 +1,13 @@
+[workspace]
+members = ["tbap*"]
+
+[workspace.package]
+version = "0.1.0-alpha"
+edition = "2021"
+authors = ["tobimd"]
+description = "command-argument parser"
+documentation = "..."
+
+[profile.test]
+
+[profile.bench]

@@ -1,0 +1,21 @@
+[package]
+name = "tbap"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+documentation.workspace = true
+
+[dependencies]
+tbap_derive = { path = "../tbap_derive", optional = true }
+tbap_shared = { path = "../tbap_shared" }
+
+[features]
+default = ["env", "unicode", "derive"]
+autocomplete = []
+manpage_gen = []
+derive = []
+env = []
+unicode = []
+wrap = []
+suggest = []
